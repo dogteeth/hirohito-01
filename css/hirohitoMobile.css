@@ -171,7 +171,9 @@
 /* section03 */
 
 .section03 {
-    background-image: url(../img/1920_1080_wallpaper_01.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 20%), url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .pastAndPresentBanner {
@@ -197,7 +199,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem;
     background-color: grey;
 }
@@ -211,6 +213,17 @@
 
 .booksCuatroModule .bookText {
     margin-top: 1rem;
+}
+
+.section03 .booksRecommendation h1 {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.section03 .booksRecommendation {
+    padding-bottom: 1rem;
+    color: white;
 }
 
 /* 卡片區 */

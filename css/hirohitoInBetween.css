@@ -322,7 +322,7 @@
 /* section03 */
 
 .section03 {
-    background-image: url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 20%), url(../img/section02Banner/556_1656_sideBanner-background.png);
     background-size: cover;
     background-repeat: repeat;
 }
@@ -348,6 +348,16 @@
     width: 80%;
     color: white;
     text-align: justify;
+}
+
+.section03 .booksRecommendation h1 {
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.booksRecommendation {
+    padding-bottom: 1rem;
 }
 
 /*  */
@@ -514,6 +524,11 @@
 
 
 /* section04 */
+
+.section04BannerDescription p {
+    display: none;
+}
+
 .theWorldEventsBanner {
     position: relative;
 }
@@ -529,8 +544,8 @@
 .section04BannerDescription {
     position: absolute;
     top: 5rem;
-    transform: translateX(20%);
-    width: 60%;
+    transform: translateX(5%);
+    width: 100%;
 }
 
 .section04BannerH1 {
