@@ -544,6 +544,9 @@ html {
 .section04BannerDescription p {
     max-width: 50rem;
     font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 0.01rem 0.01rem 0.05rem white;
+
 }
 
 
