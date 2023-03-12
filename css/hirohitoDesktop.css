@@ -9,7 +9,7 @@ html {
     width: 100%;
     min-width: 900px;
     min-height: 700px;
-    height: 100vh;
+    height: 90vh;
     max-height: 1080px;
     background-color: var(--backgroundGrey);
     position: relative;
@@ -45,7 +45,7 @@ html {
 }
 
 .section01Container {
-    height: 100vh;
+    height: 90vh;
     min-height: 500px;
     max-height: 800px;
     display: flex;
@@ -124,7 +124,7 @@ html {
 }
 
 .section01Sub {
-    background-image: url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background-image: url(../img/section02Banner/556_1656_sideBanner-background.jpg);
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@ html {
     margin: auto;
     display: flex;
     flex-direction: row;
-    background-image: url(../img/section02Banner/400_3000_sideBanner.png);
+    background-image: url(../img/section02Banner/400_3000_sideBanner.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 5rem;
@@ -314,7 +314,7 @@ html {
 /* section03 */
 
 .section03 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 20%), url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 20%), url(../img/section02Banner/556_1656_sideBanner-background.jpg);
     background-size: cover;
     background-repeat: repeat;
 }
@@ -378,7 +378,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background: url(../img/section02Banner/556_1656_sideBanner-background.jpg);
 }
 
 /*  */
@@ -835,7 +835,7 @@ audio {
 .section05 {
     color: white;
     padding: 1rem;
-    background-image: url(../img/1920_1080_wallpaper_01.png);
+    background-image: url(../img/1920_1080_wallpaper_01.jpg);
     background-repeat: repeat;
     background-size: cover;
 }

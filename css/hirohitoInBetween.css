@@ -1,5 +1,9 @@
 @import "hirohitoVariable.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* 首頁大圖 */
 .mainBanner {
     width: 100%;
@@ -129,7 +133,7 @@
 }
 
 .section01Sub {
-    background-image: url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background-image: url(../img/section02Banner/556_1656_sideBanner-background.jpg);
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -237,7 +241,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    background-image: url(../img/section02Banner/400_3000_sideBanner.png);
+    background-image: url(../img/section02Banner/400_3000_sideBanner.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 5rem;
@@ -322,7 +326,7 @@
 /* section03 */
 
 .section03 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 20%), url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.3) 20%), url(../img/section02Banner/556_1656_sideBanner-background.jpg);
     background-size: cover;
     background-repeat: repeat;
 }
@@ -346,8 +350,13 @@
     padding: 2rem;
     margin: auto;
     width: 80%;
-    color: white;
+    color: rgb(211, 208, 208);
     text-align: justify;
+}
+
+.pastAndPresentDescription span {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
 }
 
 .section03 .booksRecommendation h1 {
@@ -383,7 +392,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: url(../img/section02Banner/556_1656_sideBanner-background.png);
+    background: url(../img/section02Banner/.png);
 }
 
 /*  */
@@ -844,7 +853,7 @@ audio {
 .section05 {
     color: white;
     padding: 1rem;
-    background-image: url(../img/1920_1080_wallpaper_01.png);
+    background-image: url(../img/1920_1080_wallpaper_01.jpg);
     background-repeat: repeat;
     background-size: cover;
 }
