@@ -812,7 +812,6 @@ audio {
 }
 
 .event.spiderMove {
-    border: solid 5px red;
     min-height: 180px;
 }
 
