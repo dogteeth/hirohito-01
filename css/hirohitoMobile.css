@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* 首頁大圖 */
 .mainBanner {
     width: 100%;
@@ -142,6 +143,7 @@ html {
     color: white;
     padding: 1rem;
     margin: 1rem 1rem 2rem 1rem;
+    padding-bottom: 2rem;
     border-radius: 1rem;
 }
 
@@ -206,10 +208,13 @@ html {
 .booksCuatroModule {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: 95%;
+
     gap: 2rem;
+    /* margin: 1rem; */
     padding: 2rem;
     background-color: grey;
+    margin: auto;
 }
 
 .booksCuatroModule .bookCoverImg {
@@ -226,7 +231,7 @@ html {
 .section03 .booksRecommendation h1 {
     padding: 1rem;
     color: white;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section03 .booksRecommendation {
@@ -244,8 +249,15 @@ html {
     display: flex;
     margin-bottom: 1rem;
     overflow: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
+.cardsDeck::-webkit-scrollbar {
+    display: none;
+}
 
 .buildingNowAndThen {
     width: 100%;
@@ -346,9 +358,7 @@ html {
     padding: 2rem 1rem 0rem 1rem;
 }
 
-.booksPromoHeader {
-    text-align: center;
-}
+.section05 .booksPromoHeader h1 {}
 
 .booksPromoSection {
     display: flex;
@@ -399,7 +409,7 @@ html {
     padding: 1rem;
 }
 
-/* small screen size 不顯示 */
+/* small screen size divider 不顯示 */
 
 #divider01 {
     display: none;
@@ -421,14 +431,8 @@ html {
     display: none;
 }
 
-.section02 {
-    display: none;
-}
 
-.section04 {
-    display: none;
-}
-
+/*  */
 #myBtn {
     display: none;
     position: fixed;
@@ -448,4 +452,418 @@ html {
 #myBtn:hover {
     background-color: #555;
     color: white;
+}
+
+/* section02 */
+.itineraryText {
+    display: none;
+}
+
+.mainItinerary {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.mobileItinerarySelectors {
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    /* gap: 0.rem; */
+
+}
+
+.mobileItinerarySelectors::-webkit-scrollbar {
+    display: none;
+}
+
+.dayNumberButton {
+    color: white;
+    flex: 0 0 20%;
+    text-align: center;
+    min-width: 100px;
+    /* background-color: grey; */
+    background: linear-gradient(to bottom right, var(--tabBlack01) 60%, var(--tabBlack02) 100%);
+
+    padding: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+
+.daysItinerary {
+    display: none;
+}
+
+.itineraryBannerText {
+    text-align: center;
+}
+
+.daysItineraryList {
+    height: 35rem;
+    /* 背景測試 */
+    background-image: linear-gradient(to bottom right, rgb(128, 128, 128, 0.9) 50%, rgb(128, 128, 128, 0.5) 80%, rgb(128, 128, 128, 0.2) 100%), url(../img/section02Banner/400_3000_sideBanner.jpg);
+    background-position: bottom right;
+    background-size: cover;
+    padding: 1rem;
+    color: white;
+}
+
+.dayNumber {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.daysItineraryList ul {
+    list-style: none;
+}
+
+.dayContent span {
+    margin-right: 0.5rem;
+    background-color: lightgrey;
+    padding: 0rem 1rem 0rem 1rem;
+    color: black;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    text-shadow: none;
+}
+
+.dayContent p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: black 1px 2px 3px;
+}
+
+
+/* section04 */
+.theWorldEventsBanner {
+    position: relative;
+}
+
+.theWorldEventsImg {
+    margin-top: 1rem;
+    filter: grayscale(1) opacity(75%) blur(5px);
+    width: 100%;
+}
+
+.section04BannerDescription {
+    position: absolute;
+    top: 5rem;
+    margin: 1rem;
+}
+
+.section04BannerH1 {
+    color: black;
+    text-shadow: 0.05rem 0.05rem 0.05rem white;
+}
+
+.section04BannerDescription p {
+    display: none;
+
+}
+
+
+/* mobile 特別的處理 */
+/* .mobileUseContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem;
+    border: solid 5px yellow;
+    position: relative;
+    ;
+
+} */
+
+
+
+.theWorldEventsContent {
+    margin-top: 0.2rem;
+
+}
+
+.theWorldEventsBanner .event1920 {
+    display: none;
+
+}
+
+
+.decadesEvents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+
+
+.flagInParagraph {
+    float: left;
+    padding-right: 0.5rem;
+    width: 6rem;
+}
+
+.eventBookCover {
+    float: left;
+    padding-top: 0.5rem;
+    padding-right: 0.6rem;
+    width: 4rem;
+}
+
+.event {
+    border-radius: 0.5rem;
+    /* max-width: 250px; */
+    /* min-height: 100px; */
+    margin: 0.2rem;
+    padding: 0.8rem 1rem 2rem 1rem;
+    background-color: var(--backgroundGrey);
+    /* flex-grow: 1; */
+    width: 45%;
+}
+
+.event p {
+    /* padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    text-align: justify;
+    font-size: 1rem; */
+}
+
+.event.yearTag {
+    border: black solid 0.2rem;
+    height: 50px;
+    width: 400px;
+}
+
+.event.yearTag p {
+    color: black;
+    font-size: 3rem;
+    margin-top: -1rem;
+}
+
+
+
+.event.mainEvent {
+    font-weight: 900;
+    color: white;
+    background-color: rgba(111, 110, 110, 0.8);
+}
+
+.event.specialEvent {
+    display: flex;
+    flex-direction: column;
+}
+
+.olympics {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    filter: grayscale(0.7);
+}
+
+.olympicsMove:hover .olympics {
+    filter: grayscale(0);
+}
+
+
+
+.trojanHorse {
+    width: 12rem;
+    padding: 1rem;
+    align-self: center;
+    filter: drop-shadow(5px 10px 10px grey);
+}
+
+.trojanHorseMove:hover .trojanHorse {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.companyLogo {
+    display: none;
+    margin-top: 1rem;
+    width: 80%;
+    align-self: center;
+    transform: rotate(-10deg);
+    box-shadow: 2px 2px 5px black;
+}
+
+audio {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.companyLogoMove:hover .companyLogo {
+    animation: rotateSelf 0.5s;
+
+}
+
+@keyframes rotateSelf {
+    0% {
+        transform: rotate(10deg);
+    }
+}
+
+.torii {
+    margin-top: 1rem;
+    width: 80%;
+    align-self: center;
+    filter: grayscale(0.7);
+}
+
+.toriiMove:hover .torii {
+    animation: grayScaleAnimation 3s linear forwards;
+}
+
+.bombs {
+    margin-top: 1rem;
+    width: 7rem;
+    align-self: center;
+    filter: grayscale(0.9);
+}
+
+.bombsMove:hover .bombs {
+    animation: grayScaleAnimation 0.3s infinite;
+}
+
+@keyframes grayScaleAnimation {
+    50% {
+        filter: grayscale(0.1);
+    }
+
+    100% {
+        filter: grayscale(0.9);
+    }
+}
+
+.dove {
+    width: 10rem;
+    align-self: center;
+    margin-top: 1rem;
+    filter: drop-shadow(5px 10px 10px grey);
+}
+
+.marvelSet {
+    width: 100%;
+    position: relative;
+}
+
+.marvelLogo {
+    width: 100%;
+    position: absolute;
+    margin-top: 1rem;
+    filter: grayscale(0.7) drop-shadow(0px -5px 5px grey);
+}
+
+.spider {
+    margin-top: 1rem;
+    width: 5rem;
+    position: absolute;
+    filter: drop-shadow(5px 10px 10px grey);
+}
+
+/* spider animated */
+
+.spiderMove:hover .spider {
+    animation: shake 0.1s infinite,
+        straightLine 3s linear;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.7s, opacity 1s linear;
+}
+
+
+@keyframes straightLine {
+    50% {
+        transform: translate3D(700px, -500px, 0);
+    }
+}
+
+
+.endEvent:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s, color 1.5s linear;
+}
+
+.aHat {
+    width: 70%;
+    display: block;
+    margin: auto;
+    filter: grayscale(0.7) drop-shadow(0px -10px 5px grey);
+}
+
+.aHatMove:hover .aHat {
+    animation: aHatMove 1s linear;
+
+}
+
+@keyframes aHatMove {
+
+    30% {
+        filter: grayscale(1) drop-shadow(0px -10px 10px grey);
+    }
+
+    50% {
+        filter: grayscale(0.5) drop-shadow(0px -10px 20px grey);
+    }
+
+    70% {
+        filter: grayscale(0.7) drop-shadow(0px -10px 10px grey);
+    }
+
+    100% {
+        filter: grayscale(1) drop-shadow(0px -10px 5px grey);
+    }
+
 }

@@ -19,4 +19,7 @@
 
     --coverAndTextBackground: rgb(128, 128, 128, 0.6);
     --coverAndTextBackgroundTransparent: rgb(128, 128, 128, 0.1);
+
+    --tabBlack01: rgba(95, 84, 84, 0.5);
+    --tabBlack02: rgba(95, 84, 84, 0.1);
 }

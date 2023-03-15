@@ -6,39 +6,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .numberDiv {
-        background-color: grey;
-        font-size: 5rem;
-        width: 200px;
-        text-align: center;
-        padding: 1rem;
-        margin: 1rem;
-        border-radius: 2rem;
+      .dayNumberContainer {
+        font-size: 2rem;
+        display: flex;
+        gap: 1rem;
         color: white;
+        margin: 1rem;
       }
-      .numberDiv:hover {
-        background-color: lightgrey;
-        box-shadow: 2px 2px 2px black;
-        color: black;
+      .dayNumberButton {
+        background-color: grey;
+        padding: 1rem;
+        border-radius: 1rem;
       }
 
-      .numberDiv:active {
-        box-shadow: 0px 0px 2px black;
+      .daysItinerary {
+        display: none;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div data-number="12" class="numberDiv" id="button">Hello</div>
-      <div data-number="15" class="numberDiv">Hello</div>
+    <div class="mainItinerary">
+      <h1 class="itineraryBannerText">訪台日程表</h1>
+      <div class="dayNumberContainer">
+        <div data-number="0" class="dayNumberButton">Day One</div>
+        <div data-number="1" class="dayNumberButton">Day Two</div>
+        <div data-number="2" class="dayNumberButton">Day Three</div>
+      </div>
+      <!--  -->
+      <div class="daysItineraryList">
+        <div class="daysItineraryListColumn01">
+          <div class="daysItinerary day00">
+            <div class="dayNumber">起程 - 4月12日</div>
+            <div class="dayContent">
+              <ul>
+                <li>
+                  <p><span>08:20</span>東京車站出發，前往橫須賀軍港</p>
+                </li>
+                <li>
+                  <p><span>09:55</span>抵達橫須賀軍港，搭船前往台灣。</p>
+                </li>
+                <li>
+                  <p>
+                    **從東京出發到基隆，行船需五天的時間。途經伊豆半島，和哥山的潮岬、高知縣的土佐灣水道、鹿兒島的佐多岬，再經由沖繩島，到基隆。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="daysItinerary day01">
+            <div class="dayNumber">第一天 - 4月16日</div>
+            <div class="dayContent">
+              <ul>
+                <li>
+                  <p>
+                    <span>13:25</span>
+                    抵達基隆港，換乘火車，前往台北。在進入基隆港前，船支在澳底（貢寮）外海繞行一圈，遙拜<a
+                      href="https://zh.wikipedia.org/zh-tw/%E5%8C%97%E7%99%BD%E5%B7%9D%E5%AE%AE%E8%83%BD%E4%B9%85%E8%A6%AA%E7%8E%8B"
+                      target="_blank"
+                      >北白川宮能久親王</a
+                    >。
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>14:22</span>抵達台北、<a
+                      href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E5%8C%97%E8%B3%93%E9%A4%A8"
+                      target="_blank"
+                      >台北御泊所</a
+                    >休憇。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="daysItinerary day02">
+            <div class="dayNumber">第二天 - 4月17日</div>
+            <div class="dayContent">
+              <ul>
+                <!-- <li>
+                      <p><span>09:00</span>出發</p>
+                    </li> -->
+                <li>
+                  <p>
+                    <span>09:20</span
+                    ><a
+                      href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E7%A5%9E%E5%AE%AE"
+                      target="_blank"
+                      >台灣神社</a
+                    >參拜
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>11:05</span
+                    ><a
+                      href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E7%B8%BD%E7%9D%A3%E5%BA%9C"
+                      target="_blank"
+                      >台灣總督府</a
+                    >歡迎會
+                  </p>
+                </li>
+                <li>
+                  <p><span>13:20</span>台灣生產品展覽會參觀</p>
+                </li>
+                <li>
+                  <p>
+                    <span>15:25</span
+                    ><a
+                      href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E7%B8%BD%E7%9D%A3%E5%BA%9C%E4%B8%AD%E5%A4%AE%E7%A0%94%E7%A9%B6%E6%89%80"
+                      target="_blank"
+                      >總督府中央研究所</a
+                    >農業部參觀
+                  </p>
+                </li>
+                <li>
+                  <p><span>17:00</span>台北御泊所休憇</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-      // const target = document.getElementsByClassName('.numberDiv');
-      // console.log(target[0].dataset.number);
 
-      const target = document.querySelectorAll('.numberDiv');
-      // const target = document.getElementById('button');
-      console.log(target[1].dataset.number);
+    <script>
+      // 取得所有按鈕
+      const buttons = document.querySelectorAll('.dayNumberButton');
+      // 取得所有日程
+      const itineraries = document.querySelectorAll('.daysItinerary');
+      // 預設所有顯示狀態為false
+      let boolArray = [false, false, false];
+
+      // set all the value to false
+      function updateAllBoolValueToFalse() {
+        for (let i = 0; i < boolArray.length; i++) {
+          boolArray[i] = false;
+        }
+      }
+
+      // change the specific bool to true
+      function updateTargetBoolValueToTrue(buttonNumber) {
+        boolArray[buttonNumber] = true;
+      }
+
+      // refresh the view
+      function refreshTheView() {
+        for (let i = 0; i < boolArray.length; i++) {
+          if (boolArray[i] == true) {
+            itineraries[i].style.display = 'initial';
+          } else {
+            itineraries[i].style.display = 'none';
+          }
+        }
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          let clickButtonNumber = button.dataset.number;
+          updateAllBoolValueToFalse();
+          updateTargetBoolValueToTrue(clickButtonNumber);
+          refreshTheView();
+        });
+      });
     </script>
+    <!-- <script>
+      const targets = document.querySelectorAll('.dayNumberButton');
+      const itineraries = document.querySelectorAll('.daysItinerary');
+      let boolArray = [false, false, false];
+
+      //
+      let n = 0;
+      targets.forEach(function (target) {
+        let answer = boolArray[n];
+        if (answer == true) {
+          itineraries[n].style.display = 'initial';
+        }
+        n++;
+      });
+
+      //
+      console.log('original: ' + boolArray);
+
+      //
+      boolArray[1] = true;
+      function updateBoolValue() {
+        for (let i = 0; i < boolArray.length; i++) {
+          boolArray[i] = true;
+        }
+      }
+      updateBoolValue();
+      console.log('update: ' + boolArray);
+    </script> -->
   </body>
 </html>

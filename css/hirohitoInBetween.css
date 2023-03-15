@@ -235,6 +235,8 @@ html {
 }
 
 /* 單元二 太子行程*/
+
+
 .section02 {
     width: 100%;
     max-width: 1000px;
@@ -250,6 +252,10 @@ html {
 
 .sideBanner {
     flex: 0 0 10%;
+}
+
+.mobileItinerarySelectors {
+    display: none;
 }
 
 
@@ -313,6 +319,7 @@ html {
     width: 100%;
     display: flex;
     gap: 1rem;
+
 }
 
 .daysItineraryList ul {
@@ -568,6 +575,11 @@ html {
 }
 
 
+
+.mobileOnlyEvent {
+    display: none;
+}
+
 .theWorldEventsBanner .event1920 {
     position: absolute;
     bottom: 0;
@@ -578,6 +590,8 @@ html {
     display: flex;
 }
 
+
+/*  */
 .decadesEvents {
     display: flex;
     flex-wrap: wrap;

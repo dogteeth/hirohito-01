@@ -236,6 +236,10 @@ html {
 
 }
 
+.mobileItinerarySelectors {
+    display: none;
+}
+
 .sideBanner {
     flex: 0 0 25%;
 }
@@ -550,6 +554,11 @@ html {
 }
 
 
+
+.mobileOnlyEvent {
+    display: none;
+}
+
 .theWorldEventsBanner .event1920 {
     position: absolute;
     bottom: 0;
@@ -560,8 +569,10 @@ html {
     display: flex;
 }
 
+
+/*  */
 .decadesEvents {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.2rem;
@@ -629,7 +640,6 @@ html {
     filter: grayscale(0.7);
 }
 
-/* no idea what to animate */
 .olympicsMove:hover .olympics {
     filter: grayscale(0);
 }
@@ -787,9 +797,16 @@ audio {
     transition: visibility 0s 0.7s, opacity 1s linear;
 }
 
-
 @keyframes straightLine {
+    /* 45% {
+        transform: translate3D(700px, -500px, 0);
+    } */
+
     50% {
+        transform: translate3D(700px, -500px, 0);
+    }
+
+    100% {
         transform: translate3D(700px, -500px, 0);
     }
 }
@@ -871,19 +888,7 @@ audio {
     margin: 1rem;
 }
 
-/* .booksPromoSet span {
-    margin: 1rem;
-    padding: 0 1rem 0 1rem;
-    border-radius: 1rem;
-    font-size: 2rem;
-    color: black;
-    background-color: white;
-}
 
-.booksPromoSet span:hover {
-    background-color: black;
-    color: white;
-} */
 
 
 .booksPromoSet .booksDuoSet {
