@@ -811,6 +811,11 @@ audio {
     filter: drop-shadow(5px 10px 10px grey);
 }
 
+.event.spiderMove {
+    border: solid 5px red;
+    min-height: 180px;
+}
+
 /* spider animated */
 
 .spiderMove:hover .spider {
