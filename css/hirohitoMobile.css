@@ -502,7 +502,7 @@ html {
 }
 
 .daysItineraryList {
-    height: 35rem;
+    height: 40rem;
     /* 背景測試 */
     background-image: linear-gradient(to bottom right, rgb(128, 128, 128, 0.9) 50%, rgb(128, 128, 128, 0.5) 80%, rgb(128, 128, 128, 0.2) 100%), url(../img/section02Banner/400_3000_sideBanner.jpg);
     background-position: bottom right;
