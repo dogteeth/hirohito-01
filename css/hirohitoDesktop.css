@@ -214,12 +214,36 @@ html {
 
 .youtubeAdded .youtubeVideoContainer {
     order: 0;
-    flex: 0 0 70%;
+    /* flex: 0 0 70%; */
 }
 
 .youtubeAdded .youtubeVideoContainer.bookTwo {
     order: 0;
     flex: 0 0 50%;
+}
+
+
+/* 國家攝影文化中心線上展 */
+.adsNCPI {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+}
+
+.adsTexts {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+
+.imgNCPI {
+    order: 0;
+    border-radius: 1rem;
+
 }
 
 /* 單元二 太子行程*/
